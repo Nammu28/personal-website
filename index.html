@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio — projects, skills, and contact.">
+  <meta name="description" content="Namrata — career roadmap, projects, and contact.">
   <title>Namrata | Personal Website</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
       </button>
       <ul class="nav__links">
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -31,86 +31,177 @@
 
   <main>
 
+    <!-- Timeline origin -->
     <section class="hero" id="about">
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="container hero__content">
-        <p class="hero__eyebrow">Hello, I'm</p>
+        <p class="hero__eyebrow">Career Roadmap</p>
         <h1 class="hero__name">Namrata</h1>
         <p class="hero__title">Developer &amp; Creative Problem Solver</p>
         <p class="hero__bio">
           I build thoughtful digital experiences with clean code and attention to detail.
-          Passionate about turning ideas into elegant, user-centered products.
+          Scroll the timeline below to follow my journey — from early roles to where I am today.
         </p>
-        <div class="hero__actions">
-          <a href="#projects" class="btn btn--primary">View My Work</a>
-          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
-        </div>
+        <a href="#roadmap" class="btn btn--primary">Explore the Roadmap</a>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span></span>
       </div>
     </section>
 
-    <section class="section" id="projects">
+    <!-- Vertical timeline / roadmap -->
+    <section class="roadmap" id="roadmap" aria-label="Career timeline">
       <div class="container">
-        <div class="section__header">
-          <h2 class="section__title">Projects</h2>
-          <p class="section__subtitle">A selection of things I've built recently.</p>
-        </div>
-        <div class="projects-grid">
+        <header class="roadmap__header">
+          <h2 class="roadmap__title">The Journey</h2>
+          <p class="roadmap__subtitle">Experience, projects, and milestones along the way.</p>
+        </header>
 
-          <article class="project-card">
-            <div class="project-card__icon" aria-hidden="true">01</div>
-            <h3 class="project-card__title">TaskFlow</h3>
-            <p class="project-card__desc">
-              A minimalist task manager with drag-and-drop boards, real-time sync,
-              and a focus mode for deep work sessions.
-            </p>
-            <ul class="project-card__tags">
-              <li>React</li>
-              <li>Node.js</li>
-              <li>PostgreSQL</li>
-            </ul>
-            <a href="#" class="project-card__link">View project &rarr;</a>
-          </article>
+        <ol class="timeline">
 
-          <article class="project-card">
-            <div class="project-card__icon" aria-hidden="true">02</div>
-            <h3 class="project-card__title">WeatherLens</h3>
-            <p class="project-card__desc">
-              An interactive weather dashboard with animated maps, 7-day forecasts,
-              and location-based alerts delivered via push notifications.
-            </p>
-            <ul class="project-card__tags">
-              <li>Vue</li>
-              <li>API</li>
-              <li>CSS</li>
-            </ul>
-            <a href="#" class="project-card__link">View project &rarr;</a>
-          </article>
+          <!-- Present — EY (left) -->
+          <li class="timeline__item timeline__item--left">
+            <article class="timeline__card">
+              <span class="timeline__label">Present</span>
+              <h3 class="timeline__role">Technology Consultant</h3>
+              <p class="timeline__company">EY</p>
+              <p class="timeline__blurb">
+                Advise clients on technology strategy, digital transformation, and enterprise
+                system implementations. Translate business needs into technical solutions,
+                partner with cross-functional teams, and deliver outcomes that drive measurable
+                value across complex organizations.
+              </p>
+              <ul class="timeline__tags">
+                <li>Technology Consulting</li>
+                <li>Digital Transformation</li>
+                <li>Enterprise Systems</li>
+                <li>Client Advisory</li>
+              </ul>
+            </article>
+            <div class="timeline__node" aria-hidden="true">
+              <span class="timeline__dot"></span>
+              <time class="timeline__date">Present</time>
+            </div>
+            <div class="timeline__spacer" aria-hidden="true"></div>
+          </li>
 
-          <article class="project-card">
-            <div class="project-card__icon" aria-hidden="true">03</div>
-            <h3 class="project-card__title">DevNotes</h3>
-            <p class="project-card__desc">
-              A markdown-powered note-taking app for developers with syntax highlighting,
-              tag search, and one-click export to PDF.
-            </p>
-            <ul class="project-card__tags">
-              <li>Next.js</li>
-              <li>TypeScript</li>
-              <li>Markdown</li>
-            </ul>
-            <a href="#" class="project-card__link">View project &rarr;</a>
-          </article>
+          <!-- Education — MS (right) -->
+          <li class="timeline__item timeline__item--right">
+            <div class="timeline__spacer" aria-hidden="true"></div>
+            <div class="timeline__node" aria-hidden="true">
+              <span class="timeline__dot timeline__dot--milestone"></span>
+              <time class="timeline__date">Graduate</time>
+            </div>
+            <article class="timeline__card timeline__card--milestone">
+              <span class="timeline__label">Education</span>
+              <h3 class="timeline__role">M.S. Information Systems</h3>
+              <p class="timeline__blurb">
+                Advanced study in enterprise systems, data analytics, and IT strategy.
+                Bridged technical architecture with business outcomes — designing solutions
+                that align technology investments with organizational goals.
+              </p>
+              <ul class="timeline__tags">
+                <li>Enterprise Systems</li>
+                <li>Data Analytics</li>
+                <li>IT Strategy</li>
+              </ul>
+            </article>
+          </li>
 
-        </div>
+          <!-- Product Management — Glofox (left) -->
+          <li class="timeline__item timeline__item--left">
+            <article class="timeline__card">
+              <span class="timeline__label">Experience</span>
+              <h3 class="timeline__role">Product Manager</h3>
+              <p class="timeline__company">Glofox</p>
+              <p class="timeline__blurb">
+                Owned product initiatives for a fitness studio management platform serving
+                gyms and boutique studios worldwide. Defined roadmaps from customer insight,
+                prioritized features across engineering and design, and shipped improvements
+                that strengthened retention and studio operator workflows.
+              </p>
+              <ul class="timeline__tags">
+                <li>Product Strategy</li>
+                <li>Roadmapping</li>
+                <li>Stakeholder Management</li>
+                <li>Agile Delivery</li>
+              </ul>
+            </article>
+            <div class="timeline__node" aria-hidden="true">
+              <span class="timeline__dot"></span>
+              <time class="timeline__date">Glofox</time>
+            </div>
+            <div class="timeline__spacer" aria-hidden="true"></div>
+          </li>
+
+          <!-- First role — Kelley consulting (right) -->
+          <li class="timeline__item timeline__item--right">
+            <div class="timeline__spacer" aria-hidden="true"></div>
+            <div class="timeline__node" aria-hidden="true">
+              <span class="timeline__dot"></span>
+              <time class="timeline__date">First Role</time>
+            </div>
+            <article class="timeline__card">
+              <span class="timeline__label">Experience</span>
+              <h3 class="timeline__role">Digital Website Consultant</h3>
+              <p class="timeline__company">Kelley — Local Business Consulting</p>
+              <p class="timeline__blurb">
+                Consulted with local businesses on digital presence and website strategy.
+                Gathered client requirements, designed user-centered layouts, and built sites
+                backed by relational databases — my first end-to-end experience shipping
+                real solutions for real stakeholders.
+              </p>
+              <ul class="timeline__tags">
+                <li>Website Design</li>
+                <li>Relational Databases</li>
+                <li>UX Design</li>
+                <li>Requirements Gathering</li>
+              </ul>
+            </article>
+          </li>
+
+          <!-- Education — BS (left) -->
+          <li class="timeline__item timeline__item--left">
+            <article class="timeline__card timeline__card--milestone">
+              <span class="timeline__label">Education</span>
+              <h3 class="timeline__role">B.S. Information Systems &amp; Finance</h3>
+              <p class="timeline__blurb">
+                Dual focus on information systems and finance — combining technical
+                foundations in databases, systems analysis, and software with financial
+                modeling, accounting, and business decision-making.
+              </p>
+              <ul class="timeline__tags">
+                <li>Information Systems</li>
+                <li>Finance</li>
+                <li>Business Analytics</li>
+              </ul>
+            </article>
+            <div class="timeline__node" aria-hidden="true">
+              <span class="timeline__dot timeline__dot--milestone"></span>
+              <time class="timeline__date">Undergraduate</time>
+            </div>
+            <div class="timeline__spacer" aria-hidden="true"></div>
+          </li>
+
+          <!-- Origin milestone — center -->
+          <li class="timeline__item timeline__item--center">
+            <div class="timeline__origin">
+              <span class="timeline__dot timeline__dot--origin"></span>
+              <p class="timeline__origin-text">The beginning — curiosity turned into code</p>
+            </div>
+          </li>
+
+        </ol>
       </div>
     </section>
 
+    <!-- Skills as a roadmap checkpoint -->
     <section class="section section--alt" id="skills">
       <div class="container">
-        <div class="section__header">
-          <h2 class="section__title">Skills</h2>
-          <p class="section__subtitle">Technologies and tools I work with.</p>
-        </div>
+        <header class="section__header section__header--center">
+          <h2 class="section__title">Toolkit</h2>
+          <p class="section__subtitle">Technologies picked up along the road.</p>
+        </header>
         <div class="skills-grid">
           <div class="skill-group">
             <h3 class="skill-group__title">Languages</h3>
@@ -143,12 +234,14 @@
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <!-- Destination -->
+    <section class="section section--destination" id="contact">
       <div class="container">
-        <div class="section__header">
-          <h2 class="section__title">Contact</h2>
+        <header class="section__header section__header--center">
+          <p class="section__eyebrow">Next Stop</p>
+          <h2 class="section__title">Let's Connect</h2>
           <p class="section__subtitle">Have a project in mind? I'd love to hear from you.</p>
-        </div>
+        </header>
         <form class="contact-form" action="#" method="post">
           <div class="form-row">
             <div class="form-group">
