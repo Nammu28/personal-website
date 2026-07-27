@@ -887,6 +887,10 @@ img {
     padding-block: 4rem;
   }
 
+  .section#story {
+    padding-block: 2.75rem;
+  }
+
   /* Timeline stacks to left-aligned on mobile */
   .timeline::before {
     left: 1rem;
